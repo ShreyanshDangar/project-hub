@@ -1,0 +1,711 @@
+// // Q1. Even or Odd
+// let num = 4;
+// if (num % 2 === 0) {
+//   console.log("It's an even number");
+// } else {
+//   console.log("It's an odd number");
+// }
+
+// // Q2. Maximum of Two Numbers
+// let a = 5;
+// let b = 9;
+// if (a > b) {
+//   console.log(`The larger number is ${a}`);
+// } else {
+//   console.log(`The larger number is ${b}`);
+// }
+
+// // Q3. Maximum of Three Numbers
+// let x = 3;
+// let y = 7;
+// let z = 5;
+// let max = x;
+// if (y > max) max = y;
+// if (z > max) max = z;
+// console.log(`The largest of the three is ${max}`);
+
+// // Q4. Positive, Negative, or Zero
+// let value = 8;
+// if (value > 0) {
+//   console.log("That's a positive number");
+// } else if (value < 0) {
+//   console.log("That's a negative number");
+// } else {
+//   console.log("That's zero");
+// }
+
+// // Q5. Age Group
+// let age = 8;
+// if (age >= 0 && age <= 12) {
+//   console.log("Classification: Child");
+// } else if (age >= 13 && age <= 19) {
+//   console.log("Classification: Teenager");
+// } else if (age >= 20) {
+//   console.log("Classification: Adult");
+// } else {
+//   console.log("Invalid age");
+// }
+
+// // Q6. Grade Calculator
+// let marks = 92;
+// if (marks >= 90 && marks <= 100) {
+//   console.log("Your grade: A");
+// } else if (marks >= 80) {
+//   console.log("Your grade: B");
+// } else if (marks >= 70) {
+//   console.log("Your grade: C");
+// } else if (marks >= 60) {
+//   console.log("Your grade: D");
+// } else if (marks >= 0) {
+//   console.log("Your grade: F");
+// } else {
+//   console.log("Invalid marks");
+// }
+
+// // Q7. Divisible by 5
+// let digit = 10;
+// if (digit % 5 === 0) {
+//   console.log("Yes, divisible by 5");
+// } else {
+//   console.log("No, not divisible by 5");
+// }
+
+// // Q8. Divisible by 3 and 5
+// let total = 15;
+// if (total % 3 === 0 && total % 5 === 0) {
+//   console.log("Divisible by both 3 and 5");
+// } else {
+//   console.log("Not divisible by both");
+// }
+
+// // Q9. Leap Year
+// let year = 2020;
+// let isLeap = (year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0);
+// if (isLeap) {
+//   console.log(`${year} is a leap year`);
+// } else {
+//   console.log(`${year} is not a leap year`);
+// }
+
+// // Q10. In Range 10–50
+// let check = 25;
+// if (check >= 10 && check <= 50) {
+//   console.log("Within range [10-50]");
+// } else {
+//   console.log("Out of range");
+// }
+
+// // Q11. Print 1 to 10
+// let output = [];
+// for (let i = 1; i <= 10; i++) {
+//   output.push(i);
+// }
+// console.log(output.join(" "));
+
+// // Q12. Print 1 to N
+// let n = 5;
+// let series = [];
+// for (let i = 1; i <= n; i++) {
+//   series.push(i);
+// }
+// console.log(series.join(" "));
+
+// // Q13. Even Numbers 1 to N
+// let limit = 10;
+// let evens = [];
+// for (let i = 2; i <= limit; i += 2) {
+//   evens.push(i);
+// }
+// console.log(evens.join(" "));
+
+// // Q14. Odd Numbers 1 to N
+// let upper = 10;
+// let odds = [];
+// for (let i = 1; i <= upper; i += 2) {
+//   odds.push(i);
+// }
+// console.log(odds.join(" "));
+
+// // Q15. Sum 1 to N
+// let range = 5;
+// let sum = 0;
+// for (let i = 1; i <= range; i++) {
+//   sum += i;
+// }
+// console.log(`Sum from 1 to ${range}: ${sum}`);
+
+// // Q16. Product 1 to N (Factorial)
+// let count = 5;
+// let product = 1;
+// for (let i = 1; i <= count; i++) {
+//   product *= i;
+// }
+// console.log(`Factorial of ${count}: ${product}`);
+
+// // Q17. Multiplication Table
+// let base = 5;
+// let table = [];
+// for (let i = 1; i <= 10; i++) {
+//   table.push(base * i);
+// }
+// console.log(table.join(" "));
+
+// // Q18. Count Numbers Divisible by 3
+// let size = 10;
+// let divisible = 0;
+// for (let i = 3; i <= size; i += 3) {
+//   divisible++;
+// }
+// console.log(`Count: ${divisible}`);
+
+// // Q19. Factorial
+// let input = 5;
+// let factorial = 1;
+// for (let i = 2; i <= input; i++) {
+//   factorial *= i;
+// }
+// console.log(`${input}! = ${factorial}`);
+
+// // Q20. First N Multiples of 7
+// let times = 5;
+// let multiples = [];
+// for (let i = 1; i <= times; i++) {
+//   multiples.push(7 * i);
+// }
+// console.log(multiples.join(" "));
+
+// // Q21. Count Digits
+// let amount = -98;
+// let temp = Math.abs(amount);
+// let digitCount = 0;
+// if (temp === 0) {
+//   digitCount = 1;
+// } else {
+//   while (temp > 0) {
+//     digitCount++;
+//     temp = Math.floor(temp / 10);
+//   }
+// }
+// console.log(`Total digits: ${digitCount}`);
+
+// // Q22. Sum of Digits
+// let val = 505;
+// let work = Math.abs(val);
+// let digitSum = 0;
+// while (work > 0) {
+//   digitSum += work % 10;
+//   work = Math.floor(work / 10);
+// }
+// console.log(`Digit sum: ${digitSum}`);
+
+// // Q23. Product of Digits
+// let item = 123;
+// let numCopy = Math.abs(item);
+// let digitProduct = 1;
+// if (numCopy === 0) {
+//   digitProduct = 0;
+// } else {
+//   while (numCopy > 0) {
+//     digitProduct *= numCopy % 10;
+//     numCopy = Math.floor(numCopy / 10);
+//   }
+// }
+// console.log(`Digit product: ${digitProduct}`);
+
+// // Q24. Reverse a Number
+// let original = 100;
+// let sign = 1;
+// if (original < 0) {
+//   sign = -1;
+//   original = -original;
+// }
+// let reversed = 0;
+// while (original > 0) {
+//   reversed = reversed * 10 + (original % 10);
+//   original = Math.floor(original / 10);
+// }
+// reversed *= sign;
+// console.log(`Reversed: ${reversed}`);
+
+// // Q25. Palindrome Number
+// let checkPal = 121;
+// let holder = checkPal;
+// let signPal = 1;
+// if (checkPal < 0) {
+//   signPal = -1;
+//   holder = -holder;
+// }
+// let mirror = holder;
+// let mirrorRev = 0;
+// while (mirror > 0) {
+//   mirrorRev = mirrorRev * 10 + (mirror % 10);
+//   mirror = Math.floor(mirror / 10);
+// }
+// let isPalindrome = mirrorRev === holder && signPal === 1;
+// console.log(`Palindrome: ${isPalindrome}`);
+
+// // Q26. Prime Number
+// let candidate = 31;
+// let isPrime = true;
+// if (candidate <= 1) {
+//   isPrime = false;
+// } else {
+//   for (let i = 2; i * i <= candidate; i++) {
+//     if (candidate % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+// }
+// console.log(`Is prime: ${isPrime}`);
+
+// // Q27. All Primes up to N
+// let ceiling = 100;
+// let primes = [];
+// for (let n = 2; n <= ceiling; n++) {
+//   let prime = true;
+//   for (let i = 2; i * i <= n; i++) {
+//     if (n % i === 0) {
+//       prime = false;
+//       break;
+//     }
+//   }
+//   if (prime) {
+//     primes.push(n);
+//   }
+// }
+// console.log(primes.join(" "));
+
+// // Q28. Fibonacci Sequence
+// let terms = 7;
+// let prev = 0;
+// let curr = 1;
+// let fib = [];
+// for (let i = 1; i <= terms; i++) {
+//   fib.push(prev);
+//   let next = prev + curr;
+//   prev = curr;
+//   curr = next;
+// }
+// console.log(fib.join(" "));
+
+// // Q29. GCD of Two Numbers
+// let numA = 12;
+// let numB = 18;
+// let gcd = 1;
+// let boundary = numA < numB ? numA : numB;
+// for (let i = 1; i <= boundary; i++) {
+//   if (numA % i === 0 && numB % i === 0) {
+//     gcd = i;
+//   }
+// }
+// console.log(`GCD: ${gcd}`);
+
+// // Q30. LCM of Two Numbers
+// let numX = 4;
+// let numY = 6;
+// let start = numX > numY ? numX : numY;
+// let lcm = start;
+// while (true) {
+//   if (lcm % numX === 0 && lcm % numY === 0) {
+//     break;
+//   }
+//   lcm++;
+// }
+// console.log(`LCM: ${lcm}`);
+
+// // Q31. String Length
+// let text = "hello";
+// let length = 0;
+// for (let i = 0; i < text.length; i++) {
+//   length++;
+// }
+// console.log(`Length: ${length}`);
+
+// // Q32. Print Each Character
+// let word = "cat";
+// for (let i = 0; i < word.length; i++) {
+//   let char = word[i];
+//   console.log(char);
+// }
+
+// // Q33. Count Vowels
+// let phrase = "JAVASCRIPT";
+// let vowelSet = "aeiouAEIOU";
+// let vowelCount = 0;
+// for (let i = 0; i < phrase.length; i++) {
+//   let ch = phrase[i];
+//   if (vowelSet.indexOf(ch) !== -1) {
+//     vowelCount++;
+//   }
+// }
+// console.log(`Vowels: ${vowelCount}`);
+
+// // Q34. Count Consonants
+// let str = "a e i";
+// let vowels = "aeiouAEIOU";
+// let consonantCount = 0;
+// for (let i = 0; i < str.length; i++) {
+//   let ch = str[i];
+//   let isLetter = (ch >= "a" && ch <= "z") || (ch >= "A" && ch <= "Z");
+//   if (isLetter && vowels.indexOf(ch) === -1) {
+//     consonantCount++;
+//   }
+// }
+// console.log(`Consonants: ${consonantCount}`);
+
+// // Q35. To Uppercase
+// let lower = "123abc";
+// let upperResult = "";
+// for (let i = 0; i < lower.length; i++) {
+//   let ch = lower[i];
+//   if (ch >= "a" && ch <= "z") {
+//     let code = ch.charCodeAt(0);
+//     let upperCode = code - 32;
+//     let upperChar = String.fromCharCode(upperCode);
+//     upperResult += upperChar;
+//   } else {
+//     upperResult += ch;
+//   }
+// }
+// console.log(upperResult);
+
+// // Q36. To Lowercase
+// let upper = "123ABC";
+// let lowerResult = "";
+// for (let i = 0; i < upper.length; i++) {
+//   let ch = upper[i];
+//   if (ch >= "A" && ch <= "Z") {
+//     let code = ch.charCodeAt(0);
+//     let lowerCode = code + 32;
+//     let lowerChar = String.fromCharCode(lowerCode);
+//     lowerResult += lowerChar;
+//   } else {
+//     lowerResult += ch;
+//   }
+// }
+// console.log(lowerResult);
+
+// // Q37. Reverse String
+// let textRev = "hello";
+// let reversed = "";
+// for (let i = textRev.length - 1; i >= 0; i--) {
+//   reversed += textRev[i];
+// }
+// console.log(reversed);
+
+// // Q38. Palindrome String
+// let stringCheck = "madam";
+// let original2 = stringCheck;
+// let reversedStr = "";
+// for (let i = stringCheck.length - 1; i >= 0; i--) {
+//   reversedStr += stringCheck[i];
+// }
+// let isStringPal = original2 === reversedStr;
+// console.log(`Palindrome: ${isStringPal}`);
+
+// // Q39. Count Specific Character
+// let countStr = "banana";
+// let charCount = 0;
+// for (let i = 0; i < countStr.length; i++) {
+//   let ch = countStr[i];
+//   if (ch === "a" || ch === "A") {
+//     charCount++;
+//   }
+// }
+// console.log(`Occurrences: ${charCount}`);
+
+// // Q40. Remove All Spaces
+// let spaced = "  a b  c  ";
+// let noSpace = "";
+// for (let i = 0; i < spaced.length; i++) {
+//   let ch = spaced[i];
+//   if (ch !== " " && ch !== "\t") {
+//     noSpace += ch;
+//   }
+// }
+// console.log(noSpace);
+
+// // Q41. Count Words
+// let sentence = "  this   is   spaced  ";
+// let trimmed = sentence.trim();
+// let words = trimmed === "" ? [] : trimmed.split(" ").filter(function(s){ return s !== ""; });
+// console.log(`Words: ${words.length}`);
+
+// // Q42. Replace Character
+// let source = "banana";
+// let replaced = "";
+// for (let i = 0; i < source.length; i++) {
+//   let ch = source[i];
+//   if (ch === "a") replaced += "e";
+//   else replaced += ch;
+// }
+// console.log(replaced);
+
+// // Q43. Contains Character
+// let sample = "JavaScript";
+// let searchChar = "S";
+// let found = false;
+// for (let i = 0; i < sample.length; i++) {
+//   if (sample[i] === searchChar) {
+//     found = true;
+//     break;
+//   }
+// }
+// console.log(`Found: ${found}`);
+
+// // Q44. Compare Strings
+// let str1 = "hello";
+// let str2 = "hello";
+// let match = str1 === str2;
+// console.log(`Exact match: ${match}`);
+
+// // Q45. Count Digits in String
+// let mixed = "2025 year";
+// let digitTotal = 0;
+// for (let i = 0; i < mixed.length; i++) {
+//   let ch = mixed[i];
+//   if (ch >= "0" && ch <= "9") digitTotal++;
+// }
+// console.log(`Digits: ${digitTotal}`);
+
+// // Q46. Count Uppercase
+// let sampleUpper = "HeLLo";
+// let upperCount = 0;
+// for (let i = 0; i < sampleUpper.length; i++) {
+//   let ch = sampleUpper[i];
+//   if (ch >= "A" && ch <= "Z") upperCount++;
+// }
+// console.log(`Uppercase: ${upperCount}`);
+
+// // Q47. Count Lowercase
+// let sampleLower = "HeLLo";
+// let lowerCount = 0;
+// for (let i = 0; i < sampleLower.length; i++) {
+//   let ch = sampleLower[i];
+//   if (ch >= "a" && ch <= "z") lowerCount++;
+// }
+// console.log(`Lowercase: ${lowerCount}`);
+
+// // Q48. Remove Vowels
+// let withVowels = "JavaScript";
+// let noVowels = "";
+// let vowelList = "aeiouAEIOU";
+// for (let i = 0; i < withVowels.length; i++) {
+//   let ch = withVowels[i];
+//   if (vowelList.indexOf(ch) === -1) noVowels += ch;
+// }
+// console.log(noVowels);
+
+// // Q49. Remove Digits
+// let alphaNum = "Js 101 course";
+// let noDigits = "";
+// for (let i = 0; i < alphaNum.length; i++) {
+//   let ch = alphaNum[i];
+//   if (!(ch >= "0" && ch <= "9")) noDigits += ch;
+// }
+// console.log(noDigits);
+
+// // Q50. Toggle Case
+// let toggleText = "HeLLo";
+// let toggled = "";
+// for (let i = 0; i < toggleText.length; i++) {
+//   let ch = toggleText[i];
+//   if (ch >= "a" && ch <= "z") {
+//     let code = ch.charCodeAt(0);
+//     toggled += String.fromCharCode(code - 32);
+//   } else if (ch >= "A" && ch <= "Z") {
+//     let code = ch.charCodeAt(0);
+//     toggled += String.fromCharCode(code + 32);
+//   } else {
+//     toggled += ch;
+//   }
+// }
+// console.log(toggled);
+
+// // Q51. Print Array Elements
+// let items = [1, 2, 3];
+// let printed = [];
+// for (let i = 0; i < items.length; i++) {
+//   printed.push(items[i]);
+// }
+// console.log(printed.join(" "));
+
+// // Q52. Sum Array
+// let numbers = [5, -2, 7];
+// let totalSum = 0;
+// for (let i = 0; i < numbers.length; i++) {
+//   totalSum += numbers[i];
+// }
+// console.log(`Sum: ${totalSum}`);
+
+// // Q53. Max in Array
+// let arr = [3, 7, 2, 9];
+// let maxVal = arr.length > 0 ? arr[0] : -Infinity;
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > maxVal) maxVal = arr[i];
+// }
+// console.log(`Maximum: ${maxVal}`);
+
+// // Q54. Min in Array
+// let arr2 = [3, 7, 2, 9];
+// let minVal = arr2.length > 0 ? arr2[0] : Infinity;
+// for (let i = 1; i < arr2.length; i++) {
+//   if (arr2[i] < minVal) minVal = arr2[i];
+// }
+// console.log(`Minimum: ${minVal}`);
+
+// // Q55. Count Evens
+// let numsEven = [1, 2, 3, 4, 5, 6];
+// let evenCount = 0;
+// for (let i = 0; i < numsEven.length; i++) {
+//   if (numsEven[i] % 2 === 0) evenCount++;
+// }
+// console.log(`Even count: ${evenCount}`);
+
+// // Q56. Count Odds
+// let numsOdd = [1, 2, 3, 4, 5];
+// let oddCount = 0;
+// for (let i = 0; i < numsOdd.length; i++) {
+//   if (Math.abs(numsOdd[i]) % 2 === 1) oddCount++;
+// }
+// console.log(`Odd count: ${oddCount}`);
+
+// // Q57. Positive Numbers Only
+// let mixed2 = [-1, 0, 5, 3, -2];
+// let positives = [];
+// for (let i = 0; i < mixed2.length; i++) {
+//   if (mixed2[i] > 0) positives.push(mixed2[i]);
+// }
+// console.log(positives.join(" "));
+
+// // Q58. Negative Numbers Only
+// let mixed3 = [-1, 0, 5, 3, -2];
+// let negatives = [];
+// for (let i = 0; i < mixed3.length; i++) {
+//   if (mixed3[i] < 0) negatives.push(mixed3[i]);
+// }
+// console.log(negatives.join(" "));
+
+// // Q59. Elements Greater Than 10
+// let data = [5, 12, 7, 20, 3];
+// let above = [];
+// for (let i = 0; i < data.length; i++) {
+//   if (data[i] > 10) above.push(data[i]);
+// }
+// console.log(above.join(" "));
+
+// // Q60. Average
+// let vals = [1, 2, 3, 4];
+// let sumVals = 0;
+// for (let i = 0; i < vals.length; i++) {
+//   sumVals += vals[i];
+// }
+// let avg = vals.length === 0 ? 0 : sumVals / vals.length;
+// console.log(`Average: ${avg}`);
+
+// // Q61. Double Elements
+// let base2 = [1, 2, 3];
+// let doubled = [];
+// for (let i = 0; i < base2.length; i++) {
+//   doubled.push(base2[i] * 2);
+// }
+// console.log(doubled.join(" "));
+
+// // Q62. Square Elements
+// let nums2 = [1, 2, 3];
+// let squared = [];
+// for (let i = 0; i < nums2.length; i++) {
+//   squared.push(nums2[i] * nums2[i]);
+// }
+// console.log(squared.join(" "));
+
+// // Q63. Reverse Array
+// let forward = [1, 2, 3];
+// let backward = [];
+// for (let i = forward.length - 1; i >= 0; i--) {
+//   backward.push(forward[i]);
+// }
+// console.log(backward.join(" "));
+
+// // Q64. Copy Array
+// let source2 = [1, 2, 3];
+// let copy = [];
+// for (let i = 0; i < source2.length; i++) {
+//   copy.push(source2[i]);
+// }
+// console.log(copy.join(" "));
+
+// // Q65. Contains Value
+// let haystack = [1, 2, 3];
+// let needle = 2;
+// let exists = false;
+// for (let i = 0; i < haystack.length; i++) {
+//   if (haystack[i] === needle) {
+//     exists = true;
+//     break;
+//   }
+// }
+// console.log(`Found: ${exists}`);
+
+// // Q66. Find Index
+// let idxArr = [10, 20, 30];
+// let idxVal = 20;
+// let idx = -1;
+// for (let i = 0; i < idxArr.length; i++) {
+//   if (idxArr[i] === idxVal) {
+//     idx = i;
+//     break;
+//   }
+// }
+// console.log(`Index: ${idx}`);
+
+// // Q67. Count Frequency
+// let freq = [1, 2, 2, 3, 2];
+// let target = 2;
+// let freq2 = 0;
+// for (let i = 0; i < freq.length; i++) {
+//   if (freq[i] === target) freq2++;
+// }
+// console.log(`Frequency: ${freq2}`);
+
+// // Q68. Is Sorted
+// let sorted = [1, 2, 2, 3];
+// let isSorted = true;
+// for (let i = 1; i < sorted.length; i++) {
+//   if (sorted[i] < sorted[i - 1]) {
+//     isSorted = false;
+//     break;
+//   }
+// }
+// console.log(`Sorted: ${isSorted}`);
+
+// // Q69. Second Largest
+// let numsList = [10, 5, 8, 20];
+// let largest = -Infinity;
+// let secondLarge = -Infinity;
+// for (let i = 0; i < numsList.length; i++) {
+//   let v = numsList[i];
+//   if (v > largest) {
+//     secondLarge = largest;
+//     largest = v;
+//   } else if (v > secondLarge && v !== largest) {
+//     secondLarge = v;
+//   }
+// }
+// console.log(`Second largest: ${secondLarge}`);
+
+// // Q70. Second Smallest
+// let numsList2 = [10, 5, 8, 20];
+// let smallest = Infinity;
+// let secondSmall = Infinity;
+// for (let i = 0; i < numsList2.length; i++) {
+//   let v = numsList2[i];
+//   if (v < smallest) {
+//     secondSmall = smallest;
+//     smallest = v;
+//   } else if (v < secondSmall && v !== smallest) {
+//     secondSmall = v;
+//   }
+// }
+// console.log(`Second smallest: ${secondSmall}`);
